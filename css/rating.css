@@ -1,0 +1,172 @@
+
+
+/*Ajith Antony*/
+
+
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
+fieldset, label { margin: 0; padding: 0; }
+
+
+
+body{
+    background-color: black;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 3em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+ color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+.widget{
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid;
+    border-width:  1px;
+    border-color:  #ddd;
+    justify-content: center;
+    padding: 10px;;
+}
+
+.picture{
+    width: 365px;
+    height: 250px;
+    border: solid;
+    border-width:  2px;
+    border-color: red;
+    background-size: cover;
+    justify-content: center;
+}
+
+
+
+.review > textarea{
+    width: 360px;
+    border: outset;
+    border-width:  3px;
+    border-color: red;
+    background-color: #ddd;
+}
+
+.dropdown{
+  width: 370px;
+  height: 30px;
+  background-color: #ddd;
+  border-style: outset;
+  border-width:  5px;
+  border-color:  red;
+}
+
+.save{
+  width: 200px;
+  margin-top: 20px;
+}
+
+.rater{
+  margin: 0px;
+}
+
+
+#alttext{
+    color: #ddd;
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+main{
+    margin: 8px;
+}
+
+nav {
+    float: none;
+    background-color: #800000;  
+    color: white;
+}
+nav li {
+    display: inline-block;
+    padding-left: 5em;
+    padding-right: 4em;
+}
+nav ul {
+    text-align: center;
+}
+nav a {
+    border-style: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    color: black;
+}
+h1{
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    
+}
+h1 a:hover {
+    color: black;
+}
+header{
+    padding: 0;
+    background-color: #800000;
+}  
+header a{
+    text-decoration: none;
+    color: white; 
+}
+footer{
+    background-color: #800000;
+    font-size: .90em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
