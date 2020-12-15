@@ -1,0 +1,136 @@
+
+
+
+/*ArunGopalakrishnan*/
+
+
+* {box-sizing: border-box;}
+
+body {
+    background-color: #000;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+main{
+    margin: 8px;
+}
+ 
+h2,h3{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    } 
+    
+fieldset{
+        color: white;
+    } 
+button{
+        width: 100px;
+    }    
+footer{
+    background-color: #800000;
+    font-size: .90em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+th{
+  text-align: left;
+}
+
+nav {
+    float: none;
+    background-color: #800000;  
+    color: white;
+}
+nav li {
+    display: inline-block;
+    padding-left: 5em;
+    padding-right: 4em;
+}
+nav ul {
+    text-align: center;
+}
+nav a {
+    border-style: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    color: black;
+}
+h1{
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    
+}
+h1 a:hover {
+    color: black;
+}
+header{
+    padding: 0;
+    background-color: #800000;
+}  
+header a{
+    text-decoration: none;
+    color: white; 
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    
+    
+    
+    
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+/* Style the images inside the grid ​*/
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+
+
+.checked {
+  color: orange;
+}
+
+.unchecked{
+   color: white;
+}  
+
+
+
+#txtmoviename{
+  width: 400px;
+}
+
+.clearbtn{
+  margin-top: 50px;
+}
+
+
+/* Clear floats after the columns
