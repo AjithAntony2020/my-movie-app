@@ -44,7 +44,6 @@
          var sel = document.getElementById("title");
 
          sel.options[0].selected = true;
-         sel.onchange();
         
      }
 
