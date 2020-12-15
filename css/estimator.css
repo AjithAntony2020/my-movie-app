@@ -1,0 +1,135 @@
+/*Ashiq Mohammed Rafy*/
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    
+}
+header{
+    padding: 0;
+    background-color: #800000;
+}  
+header a{
+    text-decoration: none;
+    color: white; 
+}
+h1 a:hover {
+    color: black;
+}
+main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer{
+    background-color: #800000;
+    font-size: .90em;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-style: italic;
+}
+form{
+    width: 700px;
+    margin: auto;
+    border: 3px solid #800000;
+    padding: 10px 20px;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+    border: 0;
+}
+nav {
+    float: none;
+    background-color: #800000;  
+    color: white;
+}
+nav li {
+    display: inline-block;
+    padding-left: 5em;
+    padding-right: 4em;
+}
+nav ul {
+    text-align: center;
+}
+nav a {
+    border-style: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+nav a:hover {
+    color: black;
+}
+label {
+	float: left;
+    width: 150px;
+    height: 25px;
+    font-size: 1em;
+    margin: 10px;
+    font-weight: normal;
+}
+.inputClass {
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    font-size: 1.2em;
+    background-color: gray;
+    border-radius: 5px;
+    color: #800000;
+}
+p {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+span {
+	color: red;
+    font-size: 0.8em;
+}
+select{
+    background-color: gray;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #800000;
+}
+div input {
+    display: inline;
+    margin-left: 5px;
+    width: 18px;
+    margin-top: 10px;
+}
+.radioBtn{
+    color: white; 
+    font-size: 1.3em;
+    padding-right: 20px;
+    padding-left:  10px;
+}
+button{
+    background-color: #800000;
+    text-align: center;
+    margin-left: 100px;
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+h3{
+   color: #800000;
+    font-weight: bold;
+}

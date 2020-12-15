@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ticket Estimator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="css/estimator.css" rel="stylesheet">
+    <script src="js/estimator.js"></script>
+<!--    Ashiq Mohammed Rafy-->
+</head>
+<body>
+<header>
+    <h1><a href="index.html">Movie Diary</a></h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ticketest.html">Ticket Estimater</a></li>
+            <li><a href="MovieRator.html">Movie Rater</a></li>
+        </ul>
+    </nav>
+    </header>
+<main>
+    <form action="response.html" method="get"
+    	name="reservation_form" id="reservation_form">
+		<fieldset>
+        	<label for="movies">Movie:</label>
+        	<select name="movies" id="movies">
+        	</select><br>
+        	<label for="classes">Class:</label>
+        	<select name="classes" id="classes">
+        	</select><br>
+        	<label for="seats">No. of Seats:</label>
+        	<input type="text" class="inputClass" name="seats" id="seats">
+            <span>*</span>
+            <br>
+        	<label for="snacks">Add-on Snacks:</label>
+        	<div>
+                <input type="radio" id="yesradio" name="snacks" value="yes">
+                <span class="radioBtn">Yes</span>
+                <input type="radio" id="noradio" name="snacks" value="no" checked>
+                <span class="radioBtn">No</span>  
+            </div><br>
+            <div id="snacksDiv">
+                <label for="selectSnack">Snack:</label>
+                <select name="selectSnack" id="selectSnack">
+                    <option>Popcorn - $3</option>
+        		      <option>Hotdog - $5</option>
+                </select><br>
+                <label for="selectSnackAmount">Snack Amount:</label>
+                <input type="text" class="inputClass" name="selectSnackAmount" id="selectSnackAmount">
+                <span>*</span>
+            </div>
+		</fieldset>
+		<button type="button" class="btn" id="calculate">Calculate</button>
+        <button type="reset" class="btn" id="reset">Reset</button>
+        <div>
+            <h3>Calculated Cost</h3>
+            <label for="ticketCost">Ticket Cost:</label>
+        	<input type="text" class="inputClass" name="ticketCost" id="ticketCost" disabled>
+            <span></span><br>
+            <label for="snackCost">Snack Cost:</label>
+        	<input type="text" class="inputClass" name="snackCost" id="snackCost" disabled><br>
+            <label for="total">Total:</label>
+        	<input type="text" class="inputClass" name="total" id="total" disabled>
+        </div>
+	</form>
+    
+</main> 
+<footer>
+    Copyright &copy; 2020<br>Email: <a href="mailto:movie@diary.ca">movie@diary.ca</a>   
+</footer>
+</body>
+</html>
